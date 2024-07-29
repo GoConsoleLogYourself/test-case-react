@@ -1,0 +1,35 @@
+@import "../Scss/reset";
+@import "../Scss/vars";
+@import "../Scss/base";
+@import "../Scss/fonts";
+
+.app {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  padding: 15px;
+}
+
+.btns {
+  display: flex;
+  gap: 20px;
+}
+
+.employeesList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  margin-top: 100px;
+  h1 {
+    @include headers-font;
+    font-size: 24px;
+  }
+  li {
+    @include text-font;
+    line-height: 1.5rem;
+    list-style: decimal;
+  }
+}
